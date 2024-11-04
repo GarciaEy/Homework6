@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header style="background: transparent">
+    <header>
       <div class="nav-container">
         <div class="logo">
           <svg
@@ -73,39 +73,75 @@
         </div>
         <nav class="nav">
           <ul class="nav--ul__one">
-            <li class="nav-link"><a id="home" href="index.html">Home</a></li>
+            <li class="nav-link">
+              <a id="home" href="index.html" style="text-decoration: none"
+                >Home</a
+              >
+            </li>
             <li class="nav-link"><a id="browse" href="#">Browse</a></li>
             <li class="nav-link"><a id="create" href="#">Create Recipe</a></li>
           </ul>
-
           <ul class="nav--ul__two">
             <li class="nav-link">
               <a id="login" href="login.html"><button>Login</button></a>
             </li>
-
             <!-- <li class="nav-link"><a id="signUp" href="#">SignUp</a></li> -->
           </ul>
-
           <div class="container"></div>
         </nav>
         <span class="hamburger-menu material-symbols-outlined"> menu </span>
       </div>
     </header>
 
-    <div id="app">
-      <div class="circle-container">
-        <div class="small-circle">
-          <p>Want to be a Jungle Cook? Go ahead and the kitchen is yours!</p>
+    <div id="login-wrapper">
+      <div class="logIn">
+        <p class="loginHere">Login Here!</p>
+        <input
+          type="text"
+          name=".logEmail"
+          id="logEmail"
+          placeholder="Email Address:"
+        />
+        <div class="passSec">
+          <input
+            type="text"
+            name=".logpass"
+            id="logpass"
+            placeholder="Password:"
+          />
         </div>
-        <div class="yellow-circle">
-          <div class="text-wrapper">
-            <p id="title-text">The Jungle Cook</p>
-            <p>
-              The home to various recipes of your choice. Add your own recipe
-              today and fill the world with joy!
-            </p>
-          </div>
+        <button class="loginBtn">LOGIN</button>
+      </div>
+
+      <div class="signUp">
+        <p class="noAccount">don't have an account?</p>
+        <p class="signUpHere">Sign up!</p>
+        <input type="text" name=".fName" id="fName" placeholder="First Name:" />
+        <div class="passSec">
+          <input
+            type="text"
+            name=".lName"
+            id="lName"
+            placeholder="Last Name:"
+          />
         </div>
+        <div class="passSec">
+          <input
+            type="text"
+            name=".signEmail"
+            id="signEmail"
+            placeholder="Email Address:"
+          />
+        </div>
+        <div class="passSec">
+          <input
+            type="text"
+            name=".signpass"
+            id="signpass"
+            placeholder="Password:"
+          />
+        </div>
+        <button class="signBtn">SIGN UP</button>
       </div>
     </div>
 
