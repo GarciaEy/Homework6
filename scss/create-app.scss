@@ -1,0 +1,78 @@
+// header {
+//   background: white;
+//   color: black;
+//   padding: 0.5rem 0;
+//   font-family: Caveat-Regular;
+// }
+
+#create-app {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+.add-button {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: #f28b82;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #e57373;
+}
+
+.submit-button {
+  width: 422px;
+  background-color: #f28b82;
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 250px;
+}
+
+.submit-button:hover {
+  background-color: #e57373;
+}

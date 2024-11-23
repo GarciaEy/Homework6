@@ -18,6 +18,18 @@
   src: url(/assets/fonts/Lato-Italic.ttf);
 }
 
+body {
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(242, 92, 84, 0.7),
+      rgba(242, 92, 84, 0.7)
+    ),
+    url(/assets/images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
 #app {
   padding: 30px;
   display: flex;

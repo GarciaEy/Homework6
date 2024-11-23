@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header style="background: transparent">
+    <header style="background-color: white">
       <div class="nav-container">
         <div class="logo">
           <svg
@@ -96,21 +96,83 @@
       </div>
     </header>
 
-    <div id="app">
-      <div class="circle-container">
-        <div class="small-circle">
-          <p>Want to be a Jungle Cook? Go ahead and the kitchen is yours!</p>
+    <div id="create-app">
+      <h1>Hey Michael, create your recipe!</h1>
+      <form>
+        <div class="form-group">
+          <label for="recipe-image">Add Recipe Image</label>
+          <input type="file" id="recipe-image" name="recipe-image" />
         </div>
-        <div class="yellow-circle">
-          <div class="text-wrapper">
-            <p id="title-text">The Jungle Cook</p>
-            <p>
-              The home to various recipes of your choice. Add your own recipe
-              today and fill the world with joy!
-            </p>
-          </div>
+
+        <div class="form-group">
+          <label for="recipe-name">Recipe Name</label>
+          <input
+            type="text"
+            id="recipe-name"
+            name="recipe-name"
+            placeholder="Enter Recipe Name"
+          />
         </div>
-      </div>
+
+        <div class="form-group">
+          <label for="recipe-description">Recipe Description</label>
+          <textarea
+            id="recipe-description"
+            name="recipe-description"
+            placeholder="Enter Recipe Description"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="recipe-time">Recipe Total Time</label>
+          <input
+            type="text"
+            id="recipe-time"
+            name="recipe-time"
+            placeholder="e.g., 30 minutes"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="recipe-serving">Recipe Serving Size</label>
+          <input
+            type="text"
+            id="recipe-serving"
+            name="recipe-serving"
+            placeholder="e.g., Serves 4"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Enter Ingredients:</label>
+          <input type="text" name="ingredient-1" placeholder="Ingredient #1" />
+          <input type="text" name="ingredient-2" placeholder="Ingredient #2" />
+          <input type="text" name="ingredient-3" placeholder="Ingredient #3" />
+          <button type="button" class="add-button">+</button>
+        </div>
+
+        <div class="form-group">
+          <label>Enter Instructions:</label>
+          <input
+            type="text"
+            name="instruction-1"
+            placeholder="Instruction #1"
+          />
+          <input
+            type="text"
+            name="instruction-2"
+            placeholder="Instruction #2"
+          />
+          <input
+            type="text"
+            name="instruction-3"
+            placeholder="Instruction #3"
+          />
+          <button type="button" class="add-button">+</button>
+        </div>
+
+        <button type="submit" class="submit-button">Create Recipe</button>
+      </form>
     </div>
 
     <footer>
